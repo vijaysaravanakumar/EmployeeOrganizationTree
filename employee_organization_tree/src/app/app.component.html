@@ -1,0 +1,4 @@
+<div *ngIf="loaded">
+    <app-diagram [model]='model' (nodeClicked)='setSelectedNode($event)'></app-diagram>
+  </div>
+<app-inspector [selectedNode]='selectedNode' [model]='model'></app-inspector>
